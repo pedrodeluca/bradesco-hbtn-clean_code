@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Name {
     public Date modifiedDate;
     public List<Testcase> findAllTestcasesByUser(Name.User user){};
@@ -8,8 +10,8 @@ public class Name {
 
     public URL url;
 
-    public class TableRepresenter{};
-    public void car(){}; 
+    public class TableRepresent {};
+    public void saveCar(){};
 
     public saveUser(){}; createAccount(){}; generateContract(){};
  
