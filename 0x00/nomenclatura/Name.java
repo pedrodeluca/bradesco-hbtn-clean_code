@@ -13,7 +13,7 @@ public class Name {
     public class TableRepresent {};
     public void saveCar(){};
 
-    public saveUser(){}; createAccount(){}; generateContract(){};
+    public saveUser(){}; saveAccount(){}; saveContract(){};
  
     public final int DAYS_IN_YEAR = 360;
     public final int HOURS_IN_WEEK = 168;
