@@ -17,10 +17,10 @@ public class Functions {
     public void saveUser(User user){};
 
     public User saveUser(User user){
+        if(user.isAdmin){
+            user.setRole(user);
+        }
         return userRepository.save(user);
-    }
-    public void setRole(User user){
-        user.setRole(user);     
     }
 
     public Environment getEnvironment(){
@@ -34,3 +34,20 @@ public class Functions {
     }
 
 }
+
+    //  No side effects
+    //A
+    public User saveUser(User user){
+        if(user.isAdmin){
+        user.setRole(user);
+      }
+        return userRepository.save(user);
+      }
+  
+      //B
+      public User saveUser(User user){
+          return userRepository.save(user);
+      }
+      public void setRole(User user){
+          user.setRole(user);     
+      }
